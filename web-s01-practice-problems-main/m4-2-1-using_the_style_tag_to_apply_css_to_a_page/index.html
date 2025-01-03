@@ -1,0 +1,74 @@
+<!--
+DIRECTIONS: These practice problems will work similar to the ones we have seen in the last core competency, in that you will be answering each of the problems on the same HTML code. However, unlike before, we have provided an HTML markup to get things started.  You will see this markup directly below.  Please answer each of the problems by adding and changing the markup provided.
+-->
+
+<!-- HTML markup to use with practice problems -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+  <section id="section1" class="sections">
+    <article id="article1" class="articles">Article 1</article>
+    <article id="article2" class="articles">Article 2</article>
+  </section>
+  <section id="section2" class="sections">
+    <article id="article3" class="articles">Article 3</article>
+    <article id="article4" class="articles">Article 4</article>
+  </section>
+  <section id="section3" class="sections">
+    <article id="article5" class="articles">Article 5</article>
+    <article id="article6" class="articles">Article 6</article>
+  </section>
+</body>
+
+</html>
+
+
+<!-- PROBLEM 1: Begin by adding the <style> tag nested within the opening and closing <head> tags. -->
+
+<!-- PROBLEM 2: Now distinguish each of the three sections by adding some borders.  Add the markup below within the opening and closing <styles> tags you just added in problem 1, then "Run" the program again to see the changes.  This markup will add borders to all elements with the class "sections"-->
+<!--
+      .sections {
+        border: 2px solid blue;
+      }
+-->
+
+<!-- PROBLEM 3:  Add some unique features to individual articles using the id attribute.  Directly below the markup we used in problem 2, add the following markup that will change the text color of the first article to red.  After doing so, try copying and pasting the same markup five more times, but changing the id to "article2", then "article 3", and so on AND changing the color.  Click "Run" to see what happens. -->
+<!--
+      #article1 {
+          color: red;
+        }
+-->
+
+<!-- PROBLEM 4:  Finally, add one more style to all the "article" classes to give all the articles a little more elbow room, better known as "margin").-->
+<!--
+      .articles {
+        margin: 10px;
+      }
+-->
+
+<!-- PROBLEM 5 (DEBUGGING): The following HTML markup will not work.  Find the mistake, so that the browser can clearly read the proper styling and change the background color to blue.  Hint: the mistake will not be with the term "background-color" -->
+
+<!--
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .div {
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <section id="section1" class="sections">
+      <div id="div1" class="divs">Article 1</div>
+      <div id="div2" class="divs">Article 2</div>
+    </section>
+
+  </body>
+</html>
+-->

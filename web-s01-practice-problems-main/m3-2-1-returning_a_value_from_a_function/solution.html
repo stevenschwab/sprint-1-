@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <h1>Returning a Value From a Function SOLUTION</h1>
+  <script>
+    /*
+    DIRECTIONS: Below are solutions to all the practice problems for this learning objective.  You can try each solution by copying it into your "index.html" file and clicking "Run".
+    */
+
+    /*
+    PROBLEM 1: Write a function that returns the string “If you let go of a string, does it return to you?”  Next, save the return value to a variable. Then print the variable to the console.
+    */
+    function returnString() {
+      return "If you let go of a string, does it return to you?"
+    }
+
+    const string = returnString()
+    console.log(string)
+
+    /*
+    PROBLEM 2: Write a function that subtracts one from the variable “number” which currently holds the value of 10, and returns that new value.  Next, save the return value to a variable and print it to the console (which should print 9).
+    */
+    let num = 10
+
+    function decreaseNum() {
+      num-- //note that this needs to be on a separate line than return keyword, unlike the solution to the next problem, since this technically reassigns the value of num.
+      return num
+    }
+
+    const updatedNum = decreaseNum()
+    console.log(updatedNum)
+
+    /*
+   PROBLEM 3: First add a name to the variable declared below.  Next, write a function that concatenates any greeting, like "Nice to meet you", with the variable name, and returns that new string.  Save that string to a new variable and print it to the console.
+   */
+    let name = "Grace"
+
+    function greeting() {
+      return "Nice to meet you, " + name // can be all on one line since value of "name" is not reassigned
+    }
+
+    const fullGreeting = greeting()
+    console.log(fullGreeting)
+
+    /*
+    PROBLEM 4: Remember that we have learned two ways to write functions: the standard way starting with the keyword "function", and a function expression that saves your function to a variable.  This time, write a function expression that updates the "dayOfTheWeek" variable declared below and returns the current day of the week.  Finally, execute that function and save the return value, the current day of the week, to a variable to print to the console.
+    */
+    let dayOfTheWeek
+
+    const getCurrentDay = function () {
+      dayOfTheWeek = "Friday"
+      return dayOfTheWeek
+    }
+
+    const currentDay = getCurrentDay()
+    console.log(currentDay)
+
+    /*
+    PROBLEM 5 (DEBUGGING): The following function returns a value that is “undefined”.  Add a line to the body of the function so that it prints “7” to the console.
+    */
+
+    function giveMeSeven() {
+      let num = 7
+      return num // added keyword return and returned the num
+    }
+
+    const result = giveMeSeven()
+    console.log(result)
+
+  </script>
+
+</body>
+
+</html>

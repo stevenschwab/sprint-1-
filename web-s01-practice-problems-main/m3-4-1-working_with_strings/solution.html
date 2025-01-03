@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <h1>Working With Strings SOLUTION</h1>
+  <script>
+    /*
+    DIRECTIONS: Below are solutions to all the practice problems for this learning objective.  You can try each solution by copying it into your "index.html" file and clicking "Run".
+    */
+
+    /*
+    PROBLEM 1: Declare a variable with a string value of your favorite quote.  Determine the total length of that string and print that length to the console.
+    */
+    const favQuote = "A bird in the hand is worth two in the bush."
+    console.log(favQuote.length)
+
+    /*
+    PROBLEM 2: Using indices, save the 5th character's value of the string below to a new variable and print that variable to the console.
+    */
+    const string = "Houston, we have Problem 2."
+    let character5 = string[4]
+
+    console.log(character5)
+
+    /*
+   PROBLEM 3: Without looking at the paragraph below, print the last character’s value of the string.
+   */
+    let wikiJavascriptIntro = "JavaScript, often abbreviated as JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. As of 2022, 98% of websites use JavaScript on the client side for webpage behavior, often incorporating third-party libraries. All major web browsers have a dedicated JavaScript engine to execute the code on users' devices. -Wikipedia"
+
+    console.log(wikiJavascriptIntro[wikiJavascriptIntro.length - 1])
+
+    /*
+    PROBLEM 4: Using the same "wikiJavascriptIntro" variable above, print to the console the "W" of Wikipedia, located at the end of the string, with minimal counting.
+    */
+    console.log(wikiJavascriptIntro[wikiJavascriptIntro.length - 9])
+
+    /*
+    PROBLEM 5 (DEBUGGING): The following code prints “undefined” to the console. Correct the code so that it prints the letter “e”, the fifth letter of the string.
+    */
+
+    let farmAnimal = "Horse"
+    console.log(farmAnimal[4])
+
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <h1>Using the AND (&&) Operator With Values of Any Type SOLUTION</h1>
+  <script>
+    /*
+    DIRECTIONS: Below are solutions to all the practice problems for this learning objective.  You can try each solution by copying it into your "index.html" file and clicking "Run".
+    */
+
+    /*
+    PROBLEM 1: Log to the console a condition that fist includes a number operand value followed by a string operand value separted by the AND operator.  Make this condition produce the single truthy value of the string.
+    */
+    console.log(56 && "I am a string.") // prints "I am a string."
+
+    /*
+    PROBLEM 2: Log to the console a condition that first includes a number operand value followed by a string operand value separted by the AND operator.  Make this condition produce the single falsy string value.
+    */
+    console.log(78 && "") // prints nothing, simulating an empty string
+
+    /*
+   PROBLEM 3: Log to the console a condition that first includes a number operand value followed by a string operand value separted by the AND operator.  Make this condition produce a single falsy number value.
+   */
+    console.log(0 && "Will I print too?") // prints "0" because the logic stops when a falsy value is encountered
+
+    /*
+    PROBLEM 4: Log to the console a condition that includes three operands of any value type all separted by the AND operator.  Make this condition produce a single falsy value of the second operand.
+    */
+    console.log("Farming is hard work." && (5 < 3) && "So is planning a vacation with kids.") // prints false because (5 < 3) is false
+
+    /*
+    PROBLEM 5 (DEBUGGING): The following snippet prints "0" to the console.  Fix the error so that "You need a minivan." prints to the console.
+    */
+    let familySize = 6
+    let hasToddlers = true
+    console.log((familySize > 4) && hasToddlers && "You need a minivan.") // changed "&" signs to "&&"
+
+  </script>
+
+</body>
+
+</html>

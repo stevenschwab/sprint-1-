@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <h1>Working With Template Literals SOLUTION</h1>
+  <script>
+    /*
+    DIRECTIONS: Below are solutions to all the practice problems for this learning objective.  You can try each solution by copying it into your "index.html" file and clicking "Run".
+    */
+
+    /*
+    PROBLEM 1: Print to the console a template literal that embeds the number and string  values of 6 and “half a dozen” (aready declared below) into the string: “6 in one, half a dozen in the other.”
+    */
+    const number = 6
+    const string = "half a dozen"
+
+    console.log(`${number} in one, ${string} in the other.`)
+
+    /*
+    PROBLEM 2: Declare two variables and assign each one a string value of a different day of the week.  Write a function that prints to the console a string that uses a template literal that combines your variables in a sentence that reads: "I only shower on (one day) and (other day)." Finally, invoke that function to see if everything works as expected.
+    */
+    const day1 = "Thursday"
+    const day2 = "Sunday"
+
+    function showerDays() {
+      console.log(`I only shower on ${day1} and ${day2}.`)
+    }
+    showerDays()
+
+    /*
+   PROBLEM 3: Below is the variable "previousGrade".  Declare a new variable called "newGrade" that uses a template literal to save the string: "My new grade is A, but my previous grade was a (previousGrade)."  Print that new variable to the consolet to confirm your code.
+   */
+    const previousGrade = "B"
+    const newGrade = `My new grade is A, but my previous grade was a ${previousGrade}.`
+
+    console.log(newGrade)
+
+    /*
+    PROBLEM 4: Use a template literal to print out a multi-line string that lists all the seasons of the year vertically.
+    */
+    const allSeasons = `
+    Spring
+    Summer
+    Fall
+    Winter`
+    console.log(allSeasons)
+
+    /*
+    PROBLEM 5 (DEBUGGING): The following block of code throws a “Syntax Error: Invalid or unexpected token".  Fix the code so that it prints each word of the string vertically.
+    */
+    const statement = `
+      Print
+      Me
+      Vertically
+      Please` // changed quotes to backticks
+
+    console.log(statement)
+
+
+  </script>
+
+</body>
+
+</html>

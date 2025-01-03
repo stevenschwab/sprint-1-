@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <h1>Solving Logical Expressions SOLUTION</h1>
+  <script>
+    /*
+    DIRECTIONS: Below are solutions to all the practice problems for this learning objective.  You can try each solution by copying it into your "index.html" file and clicking "Run".
+    */
+
+    /*
+    PROBLEM 1: Log to the console a condition that uses an “AND” operator to check if 3 is greater than 1 and 5 is less than 8.
+    */
+    console.log(3 > 1 && 5 < 8) // prints true
+    console.log((3 > 1) && (5 < 8)) // also prints true
+
+    /*
+    PROBLEM 2: Declare a variable named “myNumber” and assign it a value of 45.  Log to the console a condition that uses an “OR” operator to check if “myNumber” is less than 5 or greater than 21.
+    */
+    let myNumber = 45
+    console.log(myNumber < 5 || myNumber > 21) // prints true
+
+    /*
+   PROBLEM 3: Declare a variable named “num” and assign it to a value of 7.  Log to the console a condition that uses an “AND” operator to check if “num” is equal to 7 and equal to “7”(with quotes).  Also log a condition that uses an “OR” operator to check the same two comparative expressions.  Did the two print the same or different boolean values?
+   */
+    let num = 7
+    console.log(num === 7 && num === "7") // prints false
+    console.log(num === 7 || num === "7") // prints true
+
+    /*
+    PROBLEM 4: Log to the console a condition that uses an "OR" operator to check if 3 / 0 is equal to undefined OR if 3 / 0 is equal to NaN.
+    */
+    console.log(3 / 0 === undefined || 3 / 0 === NaN) // prints false
+    console.log(typeof (3 / 0)) // prints "number"
+
+    /*
+    PROBLEM 5 (DEBUGGING): The following condition prints “false” to the console. Fix one of the operators so that the condition prints “true”.
+    */
+    let myString = "I have a string."
+    console.log(myString === "I have a string." && myString === "I have a string.")
+
+  </script>
+
+</body>
+
+</html>

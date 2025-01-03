@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <h1>Working With Truthy and Falsy Values SOLUTION</h1>
+  <script>
+    /*
+    DIRECTIONS: Below are solutions to all the practice problems for this learning objective.  You can try each solution by copying it into your "index.html" file and clicking "Run".
+    */
+
+    /*
+    PROBLEM 1: Using the Boolean() function, log to the console a falsy value that includes a string.
+    */
+    console.log(Boolean('')) // prints false
+
+    /*
+    PROBLEM 2: Using the Boolean() function, log to the console a truthy value that includes a number.
+    */
+    console.log(Boolean(7)) // prints true
+
+    /*
+   PROBLEM 3: Declare a variable that has any kind of falsy value, besides an empty string.  Using the Boolean() function, log that value to the console.
+   */
+    let anyVariable = 0
+    console.log(Boolean(anyVariable)) // prints false
+
+    /*
+    PROBLEM 4: Log to the console a condition that determines whether the value undefined when converted to a boolean is equal to false.
+    */
+    console.log(Boolean(undefined) === false) // prints true
+
+    /*
+    PROBLEM 5 (DEBUGGING): The following condition prints "false" in the console.  Find the error to make the condition render true.
+    */
+    console.log(Boolean("This is a string." === true)) // changed "=" to "===", now prints true
+
+  </script>
+
+</body>
+
+</html>

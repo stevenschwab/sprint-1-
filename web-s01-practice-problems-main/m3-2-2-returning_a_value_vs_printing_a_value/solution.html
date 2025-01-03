@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <h1>Returning a Value vs. Printing a Value SOLUTION</h1>
+  <script>
+    /*
+    DIRECTIONS: Below are solutions to all the practice problems for this learning objective.  You can try each solution by copying it into your "index.html" file and clicking "Run".
+    */
+
+    /*
+    PROBLEM 1: First, declare a variable using the keyword "let" called "myFavoriteBook" that holds a string value of the title of your favorite book.  Write a function that prints the value of "myFavoriteBook".  Invoke that function to confirm that it works as expected.
+    */
+    let myFavoriteBook = "The Brothers Karamazov"
+
+    function printMyFavoriteBook() {
+      console.log(myFavoriteBook)
+    }
+
+    printMyFavoriteBook()
+
+    /*
+    PROBLEM 2: Second, write another function called "updateBook()" that updates the value of "myFavoriteBook" to a new title of your choice.  Then, print that new title to the console, still within the function.  Invoke that function to confirm that it works as expected.
+    */
+    function updateBook() {
+      myFavoriteBook = "Crime and Punishment"
+      console.log(myFavoriteBook)
+    }
+
+    updateBook()
+
+    /*
+   PROBLEM 3:  Third, write another function called “updateFavoriteBookAgain()” that changes the title of your favorite book, again, to another title; but, within this function return the new title of your favorite book.  Outside the function, invoke your function and save its return value to a variable, then log the return value to the console.
+   */
+    function updateFavoriteBookAgain() {
+      myFavoriteBook = "War and Peace"
+      return myFavoriteBook
+    }
+
+    const newTitle = updateFavoriteBookAgain()
+    console.log(newTitle)
+
+    /*
+    PROBLEM 4: Finally, write another function called "updateFavoriteBookLastTime()" that changes the title of your favorite book to another title; but, within this function print to the console the following: "This is the last title change.", and still return the new title of your favorite book.  Outside the function, invoke your function and save its return value to a variable, then log to the console the return value.
+    */
+    function updateFavoriteBookLastTime() {
+      myFavoriteBook = "Anna Karenina"
+      console.log("This is the last title change.")
+      return myFavoriteBook
+    }
+
+    const lastTitle = updateFavoriteBookLastTime()
+    console.log(lastTitle)
+
+    /*
+    PROBLEM 5 (DEBUGGING): The following code throws a “Reference Error: addedMessage is not defined”.  Fix the error so that the console prints: “What is so special about Katherine Johnson?” and “She ensured safe space travel!"
+    */
+    let question = "What is so special about "
+
+    function addAnswer() {
+      question = question + "Katherine Johnson?"
+      let addedMessage = "She ensured safe space travel!"
+      return addedMessage
+    }
+
+    const addedMessage = addAnswer() // saved return value of "addAnswer()" to a new variable "addedMessage"
+
+    console.log(question)
+    console.log(addedMessage)
+
+  </script>
+
+</body>
+
+</html>

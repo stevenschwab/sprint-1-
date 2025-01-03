@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <h1>Printing Variables to the Console SOLUTION</h1>
+  <script>
+    /*
+    DIRECTIONS: Below are solutions to all the practice problems for this learning objective.  You can try each solution by copying it into your "index.html" file and clicking "Run".
+    */
+
+    /*
+    PROBLEM 1: Declare a variable using “let” and assign it any number value.  Now add five to that assigned value and log the variable to the console to confirm that five was added.
+    */
+    let num = 34
+    num += 5
+    console.log(num)
+
+    /*
+    PROBLEM 2: Declare two variables that each hold two separate sentences.  Now declare a third variable that concatenates each of those sentences together.  Log that third variable to the console to confirm that both sentences have been concatenated together.
+    */
+    const sentenceOne = "I am the first sentence."
+    const sentenceTwo = "I am the second sentence."
+
+    const combinedSentence = sentenceOne + sentenceTwo
+
+    console.log(combinedSentence)
+
+    /*
+   PROBLEM 3: Declare two variables that each hold two separate numbers.  Now declare a third variable that multiplies those numbers together.  Log that third variable to the console to confirm that both numbers have been multipled together.
+   */
+    let firstNum = 56
+    let secondNum = 89
+
+    let combinedNum = firstNum * secondNum
+
+    console.log(combinedNum)
+
+    /*
+    PROBLEM 4: Declare a variable and assign it a number value.  Now declare a second variable and assign it a string value.  Now declare a third variable that concatenates those first two together.  Log that third variable to the console to see what happens.
+    */
+    const myNum = 9
+    const myString = " is a string now."
+
+    const numStringCombined = myNum + myString
+
+    console.log(numStringCombined) // number 9 changes to a string when concatenated with a string
+
+    /*
+    PROBLEM 5 (DEBUGGING): The following snippet throws a “Reference Error”.  Remove the asterix and slashes first to see the error, then fix the code so that the console prints 5, 6, and 106.
+    */
+
+    let count = 5
+    console.log(count) // count was accidentally capitalized here
+    count++
+    console.log(count)
+    count += 100
+    console.log(count)
+
+  </script>
+
+</body>
+
+</html>

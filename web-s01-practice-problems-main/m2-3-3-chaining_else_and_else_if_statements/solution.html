@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <h1>Chaining Else and Else If Statements SOLUTION</h1>
+  <script>
+    /*
+    DIRECTIONS: Below are solutions to all the practice problems for this learning objective.  You can try each solution by copying it into your "index.html" file and clicking "Run".
+    */
+
+    /*
+    PROBLEM 1: Declare a variable and assign to it a number.  Write a conditional statement so that if that number is...
+      - less than 5, log to the console the string "Number is less than 5."
+      - less than 10, log "Number is between 5 and 9."
+      - less than 15,  log "Number is between 10-14."
+    Else, log "This must be a big number.".
+    */
+    let num = 12 // enter any number here
+    if (num < 5) {
+      console.log("Number is less than 5.")
+    }
+    else if (num < 10) {
+      console.log("Number is between 5 and 9.")
+    }
+    else if (num < 15) {
+      console.log("Number is between 10 and 14.")
+    }
+    else {
+      console.log("This must be a big number.")
+    }
+
+    /*
+    PROBLEM 2: Use the variable "guessedWord" below to write a conditional statement so that if its value is...
+      - equal to "Dog", log to the console the string "Good guess.  It's another common pet."
+      - equal to "Cat", log "Nope, but cats like them."
+      - equal to "Fish",  log "Yes!  You got it!!!"
+    Else, log "Not it.  Try again.".
+    */
+    let guessedWord = "Fish"
+    if (guessedWord === "Dog") {
+      console.log("Good guess.  It's another common pet.")
+    }
+    else if (guessedWord === "Cat") {
+      console.log("Nope, but cats like them.")
+    }
+    else if (guessedWord === "Fish") {
+      console.log("Yes!  You got it!!!")
+    }
+    else {
+      console.log("Not it.  Try again.")
+    }
+
+    /*
+   PROBLEM 3: Declare a variable called "currentSeason" and assign it your favorite season.  Write a conditional statement so that if its value is...
+     - equal to "Summer", log to the console the string "I love the sun."
+     - equal to "Fall", log "I love pumpkins."
+     - equal to "Winter",  log "I love the snow."
+     - equal to "Spring",  log "I love the flowers."
+   Else, log "That's not a season!".
+   */
+    let currentSeason = "Summer"
+    if (currentSeason === "Summer") {
+      console.log("I love the sun.")
+    }
+    else if (currentSeason === "Fall") {
+      console.log("I love pumpkins.")
+    }
+    else if (currentSeason === "Winter") {
+      console.log("I love the snow.")
+    }
+    else if (currentSeason === "Spring") {
+      console.log("I love the flowers.")
+    }
+    else {
+      console.log("That's not a season!")
+    }
+
+  </script>
+
+</body>
+
+</html>

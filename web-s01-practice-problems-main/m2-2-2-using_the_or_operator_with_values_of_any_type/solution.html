@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <h1>Using the OR (||) Operator With Values of Any Type SOLUTION</h1>
+  <script>
+    /*
+    DIRECTIONS: Below are solutions to all the practice problems for this learning objective.  You can try each solution by copying it into your "index.html" file and clicking "Run".
+    */
+
+    /*
+    PROBLEM 1: Log to the console a condition that includes two operands, one with a string value and the other with a number value, separated by an OR operator and prints the value of the first operand.
+    */
+    console.log("I am a string." || 89) // prints "I am a string."
+    //ENTER YOUR CODE HERE
+
+    /*
+    PROBLEM 2: Log to the console a condition that includes two operands, one with a string value and the other with a number value, separated by an OR operator and prints the value of the second operand.
+    */
+    console.log("" || 89) // prints 89
+    //ENTER YOUR CODE HERE
+
+    /*
+   PROBLEM 3: Log to the console a condition that includes three operands of any types that all have falsy values and prints the value of the last operand to the console.
+   */
+    console.log("" || 0 || undefined) // prints "undefined"
+    //ENTER YOUR CODE HERE
+
+    /*
+    PROBLEM 4: Declare a variable that holds a number value.  Include that variable as the first operand of a condition that includes one other operand separated by an OR operator.  Give the second operand a string value that prints "This will print if your number is 0."  Try assigning your variable a non-zero number and then 0, to see what changes.
+    */
+    let num = 0
+    console.log(num || "This will print if your number is 0.")
+    //ENTER YOUR CODE HERE
+
+    /*
+    PROBLEM 5 (DEBUGGING): The following snippet prints the first falsy value to the console.  Fix the error so that it prints the first truthy value to the console.
+    */
+    let myName = "Carol"
+    console.log(myName || 67 || undefined) // changed "&&" signs to "||"
+
+  </script>
+
+</body>
+
+</html>
